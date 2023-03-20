@@ -1,9 +1,8 @@
 package org.example.solution;
 
+import org.example.solution.medium.LongestSubstring;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class LongestSubstringTest {
     LongestSubstring longestSubstring;
