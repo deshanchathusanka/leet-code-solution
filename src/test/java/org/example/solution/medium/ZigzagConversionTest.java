@@ -2,17 +2,17 @@ package org.example.solution.medium;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.Mockito;
+import org.mockito.Spy;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.junit.Assert.*;
 
+@RunWith(MockitoJUnitRunner.class)
 public class ZigzagConversionTest {
+    @Spy
     ZigzagConversion zigzagConversion;
-
-    @Before
-    public void setUp() throws Exception {
-        zigzagConversion = Mockito.spy(new ZigzagConversion());
-    }
 
     @Test
     public void convert() {
