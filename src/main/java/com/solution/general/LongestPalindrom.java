@@ -1,4 +1,4 @@
-package com.datastructures.solution.medium;
+package com.solution.general;
 
 public class LongestPalindrom {
     public String longestPalindrome(String s) {

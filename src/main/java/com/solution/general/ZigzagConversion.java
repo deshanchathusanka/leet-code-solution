@@ -1,6 +1,4 @@
-package com.datastructures.solution.medium;
-
-import java.util.Arrays;
+package com.solution.general;
 
 public class ZigzagConversion {
     public String convert(String s, int numRows) {

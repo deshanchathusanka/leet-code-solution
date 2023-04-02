@@ -1,5 +1,6 @@
-package com.datastructures.solution.medium;
+package com.solution.solution.medium;
 
+import com.solution.general.StringToInteger;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Spy;

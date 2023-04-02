@@ -1,4 +1,4 @@
-package com.datastructures;
+package com.solution;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

@@ -1,6 +1,6 @@
-package com.datastructures.solution;
+package com.solution.solution;
 
-import com.datastructures.solution.medium.LongestSubstring;
+import com.solution.general.LongestSubstring;
 import org.junit.Before;
 import org.junit.Test;
 

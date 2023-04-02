@@ -1,6 +1,4 @@
-package com.datastructures.solution.medium;
-
-import java.util.Arrays;
+package com.solution.general;
 
 public class ReserveInteger {
     public int reverse(int x) {

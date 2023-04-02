@@ -1,23 +1,6 @@
-package com.solution.datastructures;
+package com.solution.datastructures.linkedlist;
 
 import java.util.Optional;
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    public ListNode() {
-    }
-
-    public ListNode(int value) {
-        this.val = value;
-    }
-
-    public ListNode(int value, ListNode next) {
-        this.val = value;
-        this.next = next;
-    }
-}
 
 class AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

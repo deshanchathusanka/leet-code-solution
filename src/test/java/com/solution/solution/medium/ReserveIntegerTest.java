@@ -1,5 +1,6 @@
-package com.datastructures.solution.medium;
+package com.solution.solution.medium;
 
+import com.solution.general.ReserveInteger;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
