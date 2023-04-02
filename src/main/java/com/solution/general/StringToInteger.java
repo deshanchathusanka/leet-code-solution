@@ -1,4 +1,4 @@
-package org.example.solution.medium;
+package com.datastructures.solution.medium;
 
 public class StringToInteger {
     public int myAtoi(String s) {

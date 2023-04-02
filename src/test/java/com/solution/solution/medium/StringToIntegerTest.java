@@ -1,6 +1,5 @@
-package org.example.solution.medium;
+package com.datastructures.solution.medium;
 
-import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Spy;

@@ -1,4 +1,4 @@
-package org.example.solution.medium;
+package com.datastructures.solution.medium;
 
 import java.util.Arrays;
 import java.util.HashSet;

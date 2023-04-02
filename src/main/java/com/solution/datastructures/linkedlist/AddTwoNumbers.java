@@ -1,4 +1,4 @@
-package org.example.solution.medium;
+package com.solution.datastructures;
 
 import java.util.Optional;
 

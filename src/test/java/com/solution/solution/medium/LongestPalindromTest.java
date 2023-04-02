@@ -1,9 +1,7 @@
-package org.example.solution.medium;
+package com.datastructures.solution.medium;
 
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class LongestPalindromTest {
 

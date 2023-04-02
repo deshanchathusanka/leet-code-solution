@@ -1,15 +1,11 @@
-package org.example.solution.medium;
+package com.datastructures.solution.medium;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.Spy;
 
 import static org.junit.Assert.*;
-import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.doReturn;
-import static org.mockito.Mockito.when;
 
 public class ReserveIntegerTest {
 
