@@ -19,33 +19,28 @@ interface NestedInteger {
 public class NestedIterator implements Iterator<Integer> {
 
     private final List<NestedInteger> nestedIntegers;
-    private Iterator<Integer> flatIterator;
+    private Queue<Integer> queue;
 
     public NestedIterator(List<NestedInteger> nestedList) {
         this.nestedIntegers = nestedList;
-        this.init();
-    }
-
-    private void init() {
-        List<Integer> flatInteger = new ArrayList<>();
-        flat(nestedIntegers, flatInteger);
-        flatIterator = flatInteger.listIterator();
+        this.queue = new Queue<>();
+        flat(nestedIntegers, queue);
     }
 
     @Override
     public Integer next() {
-        return flatIterator.next();
+        return queue.dequeue();
     }
 
     @Override
     public boolean hasNext() {
-        return flatIterator.hasNext();
+        return !queue.isEmpty();
     }
 
-    private void flat(List<NestedInteger> nestedIntegers, List<Integer> flatInteger) {
+    private void flat(List<NestedInteger> nestedIntegers, Queue<Integer> flatInteger) {
         for (NestedInteger nestedInteger : nestedIntegers) {
             if (nestedInteger.isInteger()) {
-                flatInteger.add(nestedInteger.getInteger());
+                flatInteger.enqueue(nestedInteger.getInteger());
             } else {
                 flat(nestedInteger.getList(), flatInteger);
             }
