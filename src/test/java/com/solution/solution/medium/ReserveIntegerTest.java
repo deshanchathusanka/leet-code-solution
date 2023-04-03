@@ -1,29 +1,23 @@
 package com.solution.solution.medium;
 
 import com.solution.general.ReserveInteger;
-import org.junit.Before;
-import org.junit.Test;
-import org.mockito.Mockito;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Spy;
+import org.mockito.junit.jupiter.MockitoExtension;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.doReturn;
+import static org.assertj.core.api.Assertions.assertThat;
 
+@ExtendWith(MockitoExtension.class)
 public class ReserveIntegerTest {
 
+    @Spy
     ReserveInteger reserveInteger;
-
-    @Before
-    public void setUp() throws Exception {
-        reserveInteger = Mockito.spy(new ReserveInteger());
-    }
 
     @Test
     public void reverse() {
-//        doReturn(432)
-//                .when(reserveInteger)
-//                        .reverse(anyInt());
-        assertEquals(-567, reserveInteger.reverse(-765));
-        assertEquals(0, reserveInteger.reverse(1534236469));
+        assertThat(reserveInteger.reverse(-765)).isEqualTo(-567);
+        assertThat(reserveInteger.reverse(1534236469)).isEqualTo(0);
     }
 
 }

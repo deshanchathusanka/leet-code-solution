@@ -1,14 +1,14 @@
 package com.solution.solution.medium;
 
 import com.solution.general.StringToInteger;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Spy;
-import org.mockito.junit.MockitoJUnitRunner;
+import org.mockito.junit.jupiter.MockitoExtension;
 
-import static org.junit.Assert.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
-@RunWith(MockitoJUnitRunner.class)
+@ExtendWith(MockitoExtension.class)
 public class StringToIntegerTest {
 
     @Spy
@@ -16,14 +16,6 @@ public class StringToIntegerTest {
 
     @Test
     public void myAtoi() {
-//        assertEquals(4193,stringToInteger.myAtoi("4193 with words"));
-//        assertEquals(0,stringToInteger.myAtoi("   +0 123"));
-//        assertEquals(0,stringToInteger.myAtoi("words and 987"));
-//        assertEquals(2147483647,stringToInteger.myAtoi("20000000000000000000"));
-//        assertEquals(42,stringToInteger.myAtoi("42"));
-//        assertEquals(3,stringToInteger.myAtoi("3.14159"));
-//        assertEquals(0,stringToInteger.myAtoi("+-12"));
-//        assertEquals(0,stringToInteger.myAtoi(""));
-        assertEquals(0,stringToInteger.myAtoi(" "));
+        assertThat(stringToInteger.myAtoi(" ")).isEqualTo(0);
     }
 }

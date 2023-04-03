@@ -1,16 +1,16 @@
 package com.solution.solution.medium;
 
 import com.solution.general.LongestPalindrom;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Spy;
+import org.mockito.junit.jupiter.MockitoExtension;
 
+@ExtendWith(MockitoExtension.class)
 public class LongestPalindromTest {
 
+    @Spy
     LongestPalindrom longestPalindrom;
-    @Before
-    public void setUp() throws Exception {
-        longestPalindrom = new LongestPalindrom();
-    }
 
     @Test
     public void longestPalindrome() {
